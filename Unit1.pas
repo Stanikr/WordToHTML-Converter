@@ -181,13 +181,15 @@ begin
     (sTmpFN);
   W.activedocument.close;
   W.Documents.Open
-    ('C:\Users\Public\Documents\Практика\test doc_dublicate.docx');
+    //('C:\Users\Public\Documents\Практика\test doc_dublicate.docx');
+    (sTmpFN);
   // W.Visible := True;
   // 'C:\Users\Public\Documents\Практика\Win32\Debug\test doc.docx'
   // пишем путь
   // FileName1.Text := OD.FileName;
   FileName1.Text :=
-    'C:\Users\Public\Documents\Практика\Win32\Debug\test doc.docx';
+    //'C:\Users\Public\Documents\Практика\Win32\Debug\test doc.docx';
+    OD.FileName;
 end;
 
 procedure TForm1.CreateHTML_BClick(Sender: TObject);
